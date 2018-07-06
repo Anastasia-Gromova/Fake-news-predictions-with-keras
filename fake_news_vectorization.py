@@ -13,7 +13,7 @@ def clear():
 nlp = spacy.load('en_core_web_md')
 
 # cleaning dataset from NaN values and converting it to numpy array
-df = pd.read_csv('./spacy_vect_fake_news')
+df = pd.read_csv('./fake_news.csv')
 df = df.dropna()
 for j in range(900):
     name = str(j)
