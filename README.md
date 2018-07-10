@@ -23,17 +23,19 @@ The dataset contains three columns with text data which should be converted to a
 The following code 'fake_news_training.py' requires Numpy, Pandas and Keras packages.
 </br>This example shows the simple keras model for the vectorized dataset predictions. The dataset is automatically separated on the training and validation parts (33% of the dataset). The following output shows that the result for testing is around 0.97, which means that 97% of the predictions were correct. The binary output is approximately evenly distributed, which means that simple accuracy can precisely describe the performance of the model.
 </br>
-</br>The output of the code:
+</br>The output of the last 5 epochs:
 ```
-Train on 10970 samples, validate on 7314 samples
-Epoch 1/5
- - 3s - loss: 0.0285 - acc: 0.9201 - val_loss: 0.0149 - val_acc: 0.9561
-Epoch 2/5
- - 1s - loss: 0.0119 - acc: 0.9661 - val_loss: 0.0113 - val_acc: 0.9669
-Epoch 3/5
- - 1s - loss: 0.0099 - acc: 0.9723 - val_loss: 0.0144 - val_acc: 0.9601
-Epoch 4/5
- - 2s - loss: 0.0083 - acc: 0.9777 - val_loss: 0.0123 - val_acc: 0.9660
-Epoch 5/5
- - 1s - loss: 0.0079 - acc: 0.9786 - val_loss: 0.0093 - val_acc: 0.9743
+Train on 13713 samples, validate on 4571 samples
+Epoch 10/15
+ - 2s - loss: 0.0057 - acc: 0.9849 - val_loss: 0.0078 - val_acc: 0.9781
+Epoch 11/15
+ - 2s - loss: 0.0052 - acc: 0.9861 - val_loss: 0.0073 - val_acc: 0.9799
+Epoch 12/15
+ - 2s - loss: 0.0056 - acc: 0.9852 - val_loss: 0.0116 - val_acc: 0.9683
+Epoch 13/15
+ - 1s - loss: 0.0050 - acc: 0.9864 - val_loss: 0.0064 - val_acc: 0.9825
+Epoch 14/15
+ - 1s - loss: 0.0042 - acc: 0.9889 - val_loss: 0.0077 - val_acc: 0.9797
+Epoch 15/15
+ - 1s - loss: 0.0045 - acc: 0.9879 - val_loss: 0.0065 - val_acc: 0.9829
 ```
